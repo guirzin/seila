@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-client_id" content="562148930359-r020l7gso9n50u427dgo0gajl5dm0sju.apps.googleusercontent.com">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>login </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <h1>bem vindo ao moreira site</h1>
+     <h2>para usar nossos serviços, faça o login</h2>
+  </head>
+  <h3>ou</h3>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <div class="card">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+    <form>
+      <input id="usuário"   type="text" placeholder=" digite seu usuário">
+      <br>
+     <input id="senha"  type="password" placeholder=" digite sua senha" >
+      <br>
+     <button type="submit">Enviar</button>
+    </form>
+    <script>
+      var loginUser = document.querySelector("#usuário").value;
+      var senhaUser = document.querySelector("#senha").value;
+
+    if (loginUser == "" && senhaUser == "9451") {
+      alert("sucesso!")
+    } else {
+      alert("usuario ou senha incorreto")
+    }
+    </script>
+
+
+
+  
